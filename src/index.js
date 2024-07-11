@@ -2,12 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import HomeScreen from './pages/home/home_screen';
+import Sample from './pages/home/home_screen';
 import reportWebVitals from './reportWebVitals';
+import Sample3 from './pages/home/sample_3';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    {/* <HomeScreen  /> */}
+    {/* <Sample /> */}
+    <Sample3 />
   </React.StrictMode>
 );
 

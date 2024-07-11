@@ -1,23 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  //Executes...
+  let a = ["Sarah", "Wura", "Toheeb", "Muyiwa"];
+
+  let alternative = [
+    { id: 1, name: "Item 1" },
+    { id: 2, name: "Item 3" },
+    { id: 3, name: "Item 4" },
+    { id: 4, name: "Item 5" },
+  ];
+  let assignment = [
+    {
+      id: 1,
+      type: [
+        { food: "beans" },
+        { food: "Rice" },
+        { food: "Yam" },
+        { food: "Fufu" },
+      ],
+    },
+    {
+      id: 2,
+      type: [
+        { car: "Benz" },
+        { car: "Toyota" },
+        { car: "BMW" },
+        { car: "Ford" },
+      ],
+    },
+    {
+      id: 3,
+      type: [
+        { system: "MAC" },
+        { system: "HP" },
+        { system: "DELL" },
+        { system: "Lenovo" },
+      ],
+    },
+  ];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {alternative.map((values) => (
+        <div>
+          <div>{values.id}</div>
+
+          <div> {values.name}</div>
+        </div>
+      ))}
     </div>
   );
 }
