@@ -10,7 +10,7 @@ function Sample() {
   let  handleIncrement = () => setvariablename(variablename+1);
   return (
     <div>
-      <button onClick={handleIncrement}>Work</button>
+      <button onClick={handleIncrement}>Workaholic</button>
 
       <Sample2 value={variablename}/>
     </div>
